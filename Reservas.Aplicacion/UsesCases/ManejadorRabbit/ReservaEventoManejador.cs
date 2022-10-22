@@ -33,8 +33,8 @@ namespace Reservas.Aplicacion.UsesCases.ManejadorRabbit {
 
         //(evento.Id,5,"TARIJA",34);
 
-        //var url = "https://aeronave.azurewebsites.net/api/Vuelo";          
-        var url = "https://localhost:44378/api/Vuelo";
+        var url = "https://reservams.azurewebsites.net/api/Vuelo";
+        //var url = "https://localhost:44378/api/Vuelo";
         var request = (HttpWebRequest)WebRequest.Create(url);
         request.Accept = "application/json";
         request.ContentType = "application/json";

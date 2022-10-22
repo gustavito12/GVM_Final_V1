@@ -15,7 +15,7 @@ namespace Reservas.Aplicacion.UsesCases.ManejadorRabbit {
     public Task Handle(CheckinAsignadoEventoQueue @evento) {
 
       //var url = "https://aeronave.azurewebsites.net/api/Vuelo";          
-      var url = "https://localhost:44378/api/Reserva/MarcaCheckin";
+      var url = "https://reservams.azurewebsites.net/api/Reserva/MarcaCheckin";
       var request = (HttpWebRequest)WebRequest.Create(url);
       request.Accept = "application/json";
       request.ContentType = "application/json";
