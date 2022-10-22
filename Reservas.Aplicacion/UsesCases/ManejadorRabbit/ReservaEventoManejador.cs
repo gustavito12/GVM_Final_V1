@@ -29,7 +29,8 @@ namespace Reservas.Aplicacion.UsesCases.ManejadorRabbit {
         int codigoDepartamento = random.Next(1, 9);
         string Departamento = VerificaDepartamento(codigoDepartamento);
 
-        VueloCreadoEvent evento1 = new VueloCreadoEvent(evento.Id, pasajero, Departamento, precio);
+        //VueloCreadoEvent evento1 = new VueloCreadoEvent(evento.Id, pasajero, Departamento, precio);
+        VueloCreadoEvent evento1 = new VueloCreadoEvent(evento.Id, evento.Cantidad, evento.Detalle, precio);
 
         //(evento.Id,5,"TARIJA",34);
 

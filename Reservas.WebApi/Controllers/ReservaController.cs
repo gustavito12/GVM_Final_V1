@@ -38,6 +38,7 @@ namespace Reservas.WebApi.Controllers {
       return Ok(id);
     }
 
+    [Route("Crear")]
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CrearReservaCommand command) {
       Guid id = await _mediator.Send(command);
