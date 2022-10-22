@@ -41,7 +41,7 @@ namespace Reservas.WebApi.Controllers {
     //    return Ok(facturas);
     //}
 
-    [Route("BuscarVuelos")]
+    [Route("BuscarVueloss")]
     [HttpGet]
     public async Task<IActionResult> ObtenerReservaPorId([FromRoute] BuscarVuelosQuery command) {
       var vuelos = await _mediator.Send(command);
